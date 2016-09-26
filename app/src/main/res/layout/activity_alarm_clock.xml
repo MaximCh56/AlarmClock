@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="is active alarm clock?"
+        android:id="@+id/checkBoxActive"
+        android:layout_marginTop="15dp"
+        android:checked="false"
+        android:textSize="15dp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="Set"
+            android:id="@+id/buttonSet"
+            style="@style/BeatBoxButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="35dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="Remove"
+            android:id="@+id/buttonRemove"
+            android:layout_gravity="center_horizontal"
+            style="@style/BeatBoxButton"
+            android:layout_weight="1"
+            android:layout_margin="35dp"
+            android:layout_marginBottom="50dp" />
+    </LinearLayout>
+
+</LinearLayout>
